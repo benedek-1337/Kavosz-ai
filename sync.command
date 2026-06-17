@@ -3,6 +3,6 @@
 cd "$(dirname "$0")"
 git add -A
 git commit -m "update" 2>/dev/null
-git push
+git push -u origin main || git push --force -u origin main
 echo ""
 echo "Kesz. Bezarhatod az ablakot."
